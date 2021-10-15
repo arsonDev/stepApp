@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StepApp</string>
+    <string name="stepCount">Liczba kroków</string>
+    <string name="steps">%d / 10000 kroków</string>
+</resources>

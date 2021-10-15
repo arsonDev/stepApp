@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center">
+        <shape
+            android:innerRadiusRatio= "2.5"
+            android:shape= "ring"
+            android:thickness= "10dp"
+            android:useLevel= "false" >
+            <solid android:color="#acacac" />
+        </shape>
+    </item>
+    <item android:width="150dp" android:height="130dp" android:gravity="center" android:drawable="@drawable/ic_running">
+    </item>
+</layer-list>
