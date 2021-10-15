@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.example.stepapp.R
 import com.example.stepapp.databinding.ActivityMainBinding
@@ -59,7 +60,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        setUI()
         checkPermission()
         initGoogleSignIn()
     }
@@ -82,6 +82,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
+        setUI()
         createObservers()
     }
 
@@ -99,7 +100,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun createObservers(){
-        viewModel.steps
     }
 
     private fun removeObservers(){

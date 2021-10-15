@@ -14,7 +14,7 @@ class Step {
             calculateProgress()
         }
 
-    val progress: Int
+    val progress
         get() = calculateProgress()
 
     private fun calculateProgress() : Int {
